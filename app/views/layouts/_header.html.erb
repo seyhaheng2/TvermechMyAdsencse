@@ -1,0 +1,64 @@
+
+
+	<div class="menu-block hidden-on-smaller-screens">
+	
+
+	<div class="logo">
+		<%= link_to root_path do %>
+			<%= image_tag "logo.gif" %>
+			<span>Tvermech</span>
+		<% end %>
+	</div>
+
+
+		<%= form_tag root_path, class: "search-form", method: :get do %>
+			<label>
+			<span class="screen-reader-text">Search for:</span>
+	          <%= text_field_tag :query, params[:query],class: "search-field", placeholder: "Seach..." %>
+	        </label>
+	        <%= submit_tag "Search", class: "search-submit"%>
+        <% end %>
+
+
+	<div class="divider"></div>
+
+	<div class="os_menu">
+		<ul id="menu-side-menu" class="menu">
+		<li id="menu-item-316" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-316"><%= link_to "Home", root_path %></li>
+		<% @categories.each do |category| %>
+			<li id="menu-item-316" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-316">
+					<%= link_to category.name, root_path(id: category.id) %>
+			</li>
+		<% end %>
+		</ul>
+	</div>
+
+<div class="divider"></div>
+
+	<div class="zilla-social size-32px">
+		<a href="http://www.facebook.com/PinSupreme" class="Facebook"><img src="wp-content/plugins/zilla-social/images/32px/Facebook.png" alt="Facebook" /></a> 
+		<a href="http://www.linkedin.com/in/username" class="LinkedIn"><img src="wp-content/plugins/zilla-social/images/32px/LinkedIn.png" alt="LinkedIn" /></a> 
+		<a href="http://pinterest.com/username" class="Pinterest"><img src="wp-content/plugins/zilla-social/images/32px/Pinterest.png" alt="Pinterest" /></a> 
+		<a href="https://twitter.com/PinSupreme" class="Twitter"><img src="wp-content/plugins/zilla-social/images/32px/Twitter.png" alt="Twitter" /></a> 
+	</div>
+
+
+
+
+<div class="under-menu-sidebar-wrapper">
+	<aside id="text-6" class="widget-1 widget-first widget-last widget-odd ads_menu_placeholder_widget widget widget_text">			<div class="textwidget"><h4>Place for ad</h4>
+		<p>Flexible Size</p></div>
+	</aside>        </div>
+	
+
+</div>
+<div class="menu-toggler-w">
+	<a href="#" class="menu-toggler">
+		<i class="fa os-icon-bars"></i>
+		<span class="menu-toggler-label">Menu</span>
+	</a>
+	<a href="index.html" class="logo">
+		<%= image_tag "logo.gif" %>
+		<span>Tvermech™</span>
+	</a>
+</div>

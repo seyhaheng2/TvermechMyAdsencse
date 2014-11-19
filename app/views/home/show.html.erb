@@ -1,0 +1,147 @@
+<div class="main-content-w">
+
+      <div class="main-content-i">
+         <div class="content side-padded-content reading-mode-content">
+            <div class="top-sidebar-wrapper">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Tvermech -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2453202390901668"
+     data-ad-slot="4333832433"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            </div>
+
+            <article id="post-159" class="post-159 post type-post status-publish format-standard has-post-thumbnail hentry category-desserts tag-chocolate pluto-page-box">
+               <div class="post-body">
+                  <div class="single-post-top-features">
+                     <div class="single-post-top-share">
+                        <i class="fa os-icon-plus share-activator-icon share-activator"></i>
+                        <span class="share-activator-label share-activator caption">Share</span>
+                        <div class="os_social-head-w">
+                           <div class="os_social">
+<div class="fb-share-button" data-href="https://www.facebook.com/tvermech?ref=hl" data-layout="button"></div>
+</div>
+                        </div>
+                     </div>
+                     <a href="#" class="single-post-top-qr">
+                     <i class="fa os-icon-qrcode"></i>
+                     <span class="caption">Read on Mobile</span>
+                     </a>
+                     <a href="#" class="single-post-top-reading-mode hidden-xs" data-message-on="Enter Reading Mode" data-message-off="Exit Reading Mode">
+                     <i class="fa os-icon-eye"></i>
+                     <span>Enter Reading Mode</span>
+                     </a>
+                  </div>
+                  <h1 class="post-title entry-title"><%= @post.name %></h1>
+                  <div class="post-meta-top entry-meta">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="post-date">Posted 
+                           <time class="entry-date updated" datetime="2014-05-05T21:10:04+00:00">
+                              <% if @post.created_at > Time.now.beginning_of_day %>
+                                 <%="#{time_ago_in_words(@post.created_at)} ago"%> 
+                              <% else %> 
+                                 <%= @post.created_at.strftime("%b %d, %Y") %>
+                              <% end %>
+                           </time>
+                           </div>
+                           <div class="post-author">by <strong class="author vcard"><%= link_to @post.user.username, class: "url fn n" %></strong></div>
+                        </div>
+                        <div class="col-md-6">
+                           <ul class="post-tags">
+                              <li><%= link_to @post.category.name %></li>
+                           </ul>
+                          
+                        </div>
+                     </div>
+                  </div>
+                  <div class="post-media-body">
+                  <div class="cont">
+                     <div class="figure-link-w">
+                              <%= @post.video.try(:html_safe) %>
+                              <br>
+                           <figure>
+                              <%= image_tag @post.image ,class: "attachment-full wp-post-image" %>
+                           </figure>
+                        </a>
+                     </div>
+                  </div>
+                  </div>
+                  <div class="post-content entry-content">
+                     
+            <%= @post.description.html_safe %>         
+                  </div>
+               </div>
+               <div class="post-meta entry-meta">
+                  <div class="meta-like">
+
+<div class="fb-like" data-href="https://www.facebook.com/tvermech" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+
+                  </div>
+               </div>
+               <div class="modal fade" id="qrcode-modal">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header text-center">
+                           <h4 class="modal-title">SCAN THIS QR CODE WITH YOUR PHONE</h4>
+                        </div>
+                        <div class="modal-body">
+                           <div class="text-center">
+                              <div id="qrcode"></div>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                           <div class="text-center">
+                              <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <div class="post-navigation-unique">
+               <div class="post-navigation-next">
+                  <div class="arrow"><i class="fa os-icon-angle-down"></i></div>
+                  
+                  <div class="caption">
+
+                  </div>
+                  <div class="navi-link"><a href="../orange-carrot-smoothie/index.html" rel="next">Orange carrot smoothie</a></div>
+               </div>
+            </div>
+
+
+
+
+
+ <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'tvermech'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+
+
+         <footer class="site-footer" role="contentinfo">
+            <div class="site-info">
+               <div class="site-footer-i">
+                  Copyright Tvermech Website. 2014        
+               </div>
+            </div>
+         </footer>
+      </div>
+   </div>
