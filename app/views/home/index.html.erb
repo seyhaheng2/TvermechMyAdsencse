@@ -62,8 +62,14 @@ function googleTranslateElementInit() {
 
 
 						<div class="meta-date pull-right">
-						<%= link_to post.category.name %>
-						
+							<i class="fa os-icon-clock-o"></i>
+							<time class="entry-date updated" datetime="2014-05-05T21:26:35+00:00">
+							 <% if post.created_at > Time.now.beginning_of_day %>
+                                 <%="#{time_ago_in_words(post.created_at)} "%> 
+                              <% else %> 
+                                 <%= post.created_at.strftime("%b %d, %Y") %>
+                              <% end %>
+							</time>
 						</div>
 
 </div>							</div>
@@ -72,14 +78,7 @@ function googleTranslateElementInit() {
 					<div class="post-meta entry-meta">
 						<ul class="post-categories">
 							<li>
-								<i class="fa os-icon-clock-o"></i>
-							<time class="entry-date updated" datetime="2014-05-05T21:26:35+00:00">
-							 <% if post.created_at > Time.now.beginning_of_day %>
-                                 <%="#{time_ago_in_words(post.created_at)} "%> 
-                              <% else %> 
-                                 <%= post.created_at.strftime("%b %d, %Y") %>
-                              <% end %>
-							</time>
+							<%= link_to post.category.name %>
 							</li></ul>                              
 
 						<div class="meta-like">
