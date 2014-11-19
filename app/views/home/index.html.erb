@@ -1,5 +1,11 @@
 
 <div class="main-content-w">
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <div class="main-content-i">  
 	<div class="content side-padded-content">
 		<div id="primary-content" class="index-isotope v3" data-layout-mode="masonry">
@@ -74,7 +80,7 @@
 					<div class="post-meta entry-meta">
 						<ul class="post-categories">
 							<li>
-							<%= link_to post.category.name %>
+							<%#= link_to post.category.name %>
 							</li></ul>                              
 
 						<div class="meta-like">
