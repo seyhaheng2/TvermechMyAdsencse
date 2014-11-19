@@ -18,9 +18,7 @@ function googleTranslateElementInit() {
 							<span class="share-activator-label share-activator caption">Share</span>
 							<div class="os_social-head-w">
 							<div class="os_social">
-							<%= link_to class: "os_social_facebook_share" do %>
-								<div class="fb-share-button" data-href="https://www.facebook.com/tvermech?ref=hl" data-layout="button"></div>
-							<% end %>
+							<%= social_share_button_tag(post.name) %>
 							</div>
 							</div>
 						</div>

@@ -24,6 +24,8 @@
 //= require comment-reply.min
 //= require default.include-footer.1c51fd
 //= require jquery.fitvids
+//= require social-share-button
+
 
 
 

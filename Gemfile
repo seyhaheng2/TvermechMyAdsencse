@@ -8,6 +8,7 @@ group :production do
   gem 'pg' 
   gem 'rails_12factor'
 end
+gem 'social-share-button'
 gem 'shareable'
 gem "social-buttons", git: "git://github.com/kristianmandrup/social-buttons.git"
 gem 'fitvidsjs_rails'
