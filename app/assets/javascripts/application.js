@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require ckeditor/init
 //= require	default.include.5f2f92
 //= require scripts.min
@@ -28,18 +27,9 @@
 
 
 
-
-$(function() {
-        likebutton =
-            '<fb:like href="" send="" width="100" show_faces="" ' +
-            'font="" layout="button_count" action="recommend">' +
-            '</fb:like>';
-        $.getScript('http://connect.facebook.net/en_US/all.js', function() {
-                FB.init({appId: 141936272547391,
-                            status: true,
-                            cookie: true,
-                            xfbml: true
-                            });
-                $('#facebook').replaceWith(likebutton);
-        });
-    });
+$(document).ready(function(){
+  if ( $('#ckeditor').length ) 
+    CKEDITOR.replace( 'ckeditor' );
+  if ( $('#ckeditor').prev('label').length ) 
+    $('#ckeditor').prev('label').css('float','none');
+});
